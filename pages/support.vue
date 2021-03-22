@@ -9,7 +9,15 @@
         <p>How often where React searched compared to other Frameworks?</p>
         <div class="SupportComponentContainer">
           <div id="trends">
-            <div class="title">Google</div>
+            <div class="title">
+              Google
+              <a
+                class="googleLink"
+                href="https://trends.google.com/trends/explore?cat=733&date=today%205-y&q=React,Vue,Angular"
+              >
+                (Link)
+              </a>
+            </div>
             <google-trends />
           </div>
           <div class="SupportChartWrapper">
@@ -94,5 +102,18 @@ export default {
   height: 50%;
   text-align: center;
   align-items: center;
+}
+
+.googleLink {
+  padding: 0 0.5em;
+  cursor: pointer;
+  text-decoration: none;
+  color: #01c58e;
+  font-weight: lighter;
+  font-size: 0.7em;
+}
+
+.googleLink:hover {
+  color: white;
 }
 </style>
